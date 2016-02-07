@@ -20,9 +20,7 @@ rm(x)
 
 png(filename = 'plot2.png',
           width = 480,
-          height = 480,
-          units = "px",
-          bg = "transparent")
+          height = 480)
 with(y, plot(DateTime, Global_active_power,
              type = "l",
              ylab = "Global Active Power (kilowatts)",
@@ -30,7 +28,6 @@ with(y, plot(DateTime, Global_active_power,
              ))
 #ylim had to be maximum of 1300 as 1200 would limit the y range to 1000 for some reason
 dev.off()
-
 
 
 

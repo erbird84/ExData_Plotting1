@@ -20,9 +20,7 @@ rm(x)
 
 png(filename = 'plot4.png',
           width = 480,
-          height = 480,
-          units = "px",
-          bg = "transparent")
+          height = 480)
 par(mfrow = c(2,2))
 #plot 1, upper left hand corner
 with(y, plot(DateTime, Global_active_power,
@@ -53,7 +51,6 @@ with(y, plot(DateTime, Global_reactive_power,
              xlab = "datetime"
 ))
 dev.off()
-
 
 
 

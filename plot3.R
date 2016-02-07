@@ -20,9 +20,7 @@ rm(x)
 
 png(filename = 'plot3.png',
           width = 480,
-          height = 480,
-          units = "px",
-          bg = "transparent")
+          height = 480)
 with(y, plot(DateTime, Sub_metering_1,
              type = "l",
              ylab = "Energy Sub Metering",
@@ -33,7 +31,6 @@ with(y, lines(DateTime, Sub_metering_3, type = "l", col = "blue"))
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col = c("black", "red", "blue"), lwd = par("lwd"), cex = .8)
 dev.off()
-
 
 
 
